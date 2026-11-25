@@ -1,0 +1,270 @@
+{
+  "_note": "متطلبات كل نوع submittal. عدّل زي ما تحب - البرنامج بيقراه كل مرة بيفتح. req=true يعني إجباري. dc=true يعني النوع بياخد رقم من DC.xlsx (من غير خطاب رفع). log=mar يعني النوع بيتسجّل في MAR LOG، و form=mar يعني البند ده البرنامج بيعمله من شيت MAR (مش محتاج ملف).",
+  "types": [
+    {
+      "code": "MAR",
+      "title": "MAR  -  Material Approval",
+      "pmm": "FORM-012-QUA-011",
+      "folder": "04_Submittals\\MAR\\1_WIP",
+      "number": "mar",
+      "subject_label": "Material",
+      "party_label": "Supplier / Manufacturer",
+      "items": [
+        {
+          "n": "01",
+          "name": "CLIENT Material Approval Form",
+          "req": true,
+          "form": "mar"
+        },
+        {
+          "n": "02",
+          "name": "Company Profile",
+          "req": true
+        },
+        {
+          "n": "03",
+          "name": "CR + Certificates (ISO / SASO)",
+          "req": true
+        },
+        {
+          "n": "04",
+          "name": "Technical Data Sheet",
+          "req": true
+        },
+        {
+          "n": "05",
+          "name": "Specification Extract (highlighted)",
+          "req": true
+        },
+        {
+          "n": "06",
+          "name": "BOQ / PO Items",
+          "req": false
+        },
+        {
+          "n": "07",
+          "name": "Type Test / Mill Certificate",
+          "req": false
+        },
+        {
+          "n": "08",
+          "name": "Previous CLIENT Approvals",
+          "req": false
+        },
+        {
+          "n": "09",
+          "name": "Drawings / Catalogue",
+          "req": false
+        }
+      ],
+      "dc": true,
+      "party_folder": true,
+      "log": "mar"
+    },
+    {
+      "code": "MIR",
+      "title": "MIR  -  Material Inspection",
+      "pmm": "FORM-012-QUA-012",
+      "folder": "05_Quality\\MIR\\1_WIP",
+      "number": "mir",
+      "subject_label": "Material",
+      "party_label": "Supplier",
+      "items": [
+        {
+          "n": "01",
+          "name": "MIR Form",
+          "req": true
+        },
+        {
+          "n": "02",
+          "name": "Delivery Note",
+          "req": true
+        },
+        {
+          "n": "03",
+          "name": "Approved MAR (reference)",
+          "req": true
+        },
+        {
+          "n": "04",
+          "name": "Mill / Test Certificate",
+          "req": false
+        },
+        {
+          "n": "05",
+          "name": "Photos of the material",
+          "req": false
+        }
+      ]
+    },
+    {
+      "code": "SD",
+      "title": "Shop Drawing",
+      "pmm": "FORM-014-COM-043",
+      "folder": "04_Submittals\\SD\\DETAILS\\1_WIP",
+      "number": "manual",
+      "subject_label": "Drawing title",
+      "party_label": "Discipline",
+      "items": [
+        {
+          "n": "01",
+          "name": "Shop Drawing Submittal Form",
+          "req": true
+        },
+        {
+          "n": "02",
+          "name": "The drawing (PDF)",
+          "req": true
+        },
+        {
+          "n": "03",
+          "name": "Design calculation",
+          "req": false
+        },
+        {
+          "n": "04",
+          "name": "Reference IFC drawing",
+          "req": false
+        }
+      ],
+      "dc": true
+    },
+    {
+      "code": "RFI",
+      "title": "RFI  -  Request for Information",
+      "pmm": "PMM-014-COM-110",
+      "folder": "02_Correspondence\\OUT\\YA\\RFI",
+      "number": "manual",
+      "subject_label": "Subject",
+      "party_label": "To",
+      "items": [
+        {
+          "n": "01",
+          "name": "RFI Form",
+          "req": true
+        },
+        {
+          "n": "02",
+          "name": "Drawing / photo of the case",
+          "req": false
+        },
+        {
+          "n": "03",
+          "name": "Specification extract",
+          "req": false
+        }
+      ]
+    },
+    {
+      "code": "SUB",
+      "title": "Subcontractor Approval",
+      "pmm": "FORM-014-COM-052 / 053",
+      "folder": "13_PARTIES",
+      "number": "manual",
+      "subject_label": "Scope of work",
+      "party_label": "Subcontractor",
+      "items": [
+        {
+          "n": "00",
+          "name": "Cover letter",
+          "req": true
+        },
+        {
+          "n": "01",
+          "name": "Subcontractor Approval Request",
+          "req": true
+        },
+        {
+          "n": "02",
+          "name": "CLIENT Subcontractor Approval Form",
+          "req": true
+        },
+        {
+          "n": "03",
+          "name": "CR + Zakat + VAT",
+          "req": true
+        },
+        {
+          "n": "04",
+          "name": "Company Profile",
+          "req": true
+        },
+        {
+          "n": "05",
+          "name": "Previous projects / experience",
+          "req": false
+        },
+        {
+          "n": "06",
+          "name": "Key staff CVs",
+          "req": false
+        },
+        {
+          "n": "07",
+          "name": "Equipment list",
+          "req": false
+        }
+      ],
+      "party_folder": true
+    },
+    {
+      "code": "MS",
+      "title": "Method Statement",
+      "pmm": "FORM-010-QUA-004",
+      "folder": "04_Submittals\\MS\\1_WIP",
+      "number": "manual",
+      "subject_label": "Activity",
+      "party_label": "Discipline",
+      "items": [
+        {
+          "n": "01",
+          "name": "Method Statement (English)",
+          "req": true
+        },
+        {
+          "n": "02",
+          "name": "Method Statement (Arabic)",
+          "req": false
+        },
+        {
+          "n": "03",
+          "name": "Risk assessment",
+          "req": false
+        },
+        {
+          "n": "04",
+          "name": "Sketches / drawings",
+          "req": false
+        }
+      ],
+      "dc": true
+    },
+    {
+      "code": "ITP",
+      "title": "ITP  -  Inspection Test Plan",
+      "pmm": "FORM-012-QUA-031",
+      "folder": "04_Submittals\\ITP\\1_WIP",
+      "number": "manual",
+      "subject_label": "Activity",
+      "party_label": "Discipline",
+      "items": [
+        {
+          "n": "01",
+          "name": "ITP Form",
+          "req": true
+        },
+        {
+          "n": "02",
+          "name": "Specification extract",
+          "req": false
+        },
+        {
+          "n": "03",
+          "name": "Checklists",
+          "req": false
+        }
+      ],
+      "dc": true
+    }
+  ]
+}
