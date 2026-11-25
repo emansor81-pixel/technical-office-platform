@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.bak-*
+SETTINGS.json
+logs/
+*.log
+PERF_LOG.txt
+modules/dc/dc_learn.json
+modules/dc/dc_moves.json
+modules/**/*_status.json
+modules/**/*_settings.json
+tessdata/
+OLD/
+Claude outputs/
