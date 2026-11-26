@@ -19,6 +19,10 @@ I'm a civil engineer, not a professional developer. I built this with the help o
 
 ![Document Center](docs/document-center.png)
 
+## Code map
+
+An interactive map of every module, file and function in the program, with what each one does: [docs/code-map.html](docs/code-map.html) (download and open it in a browser).
+
 ## Folder layout it expects
 
 The program works on a project folder (set `PROJECT_ROOT` in `SETTINGS.json`) organised like a typical technical office archive:
